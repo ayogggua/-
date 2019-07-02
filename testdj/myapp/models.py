@@ -7,6 +7,7 @@ from django.db import models
 class Grades(models.Model):
     gname = models.CharField(max_length=20)
     gdate = models.IntegerField()
+    # gdate = models.DateTimeField()
     ggirlnum = models.IntegerField()
     gboynum = models.IntegerField()
     isDelete = models.BooleanField(default=False)
